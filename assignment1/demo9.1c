@@ -1,0 +1,38 @@
+/* Write a program to convert temperature in Celsius to Fahrenheit and vice versa. Formula for
+conversion is */
+
+#include<stdio.h>
+int main()
+{
+
+float a, b, celsius, fahrenheit;
+    int choice;
+
+//  printf("\nEnter Your Choice:%d ",choice);
+//  scanf("%d", &choice);
+
+
+ //   printf("press 1 for temp to fahre");
+ //   printf("Press 2 For fahre to temp);
+
+ printf("enter your choice\n");
+
+  scanf("%d", &choice);
+
+    switch (choice) 
+	{
+    case 1:
+        printf("\nEnter The Temperature in Fahrenheit: ");
+        scanf("%f", & a);
+        celsius = 5 * (a - 32) / 9;
+        printf("\nCelsius Temperature is: %f ", celsius);
+        break;
+    case 2:
+        printf("\nEnter The Temperature in Celsius: ");
+        scanf("%f", & b);
+        fahrenheit = ((9 * b) / 5) + 32;
+        printf("\n\nFahrenheit Temperature is: %f ", fahrenheit);
+        break;
+		}
+    return 0;
+	}

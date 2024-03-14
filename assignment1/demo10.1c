@@ -1,0 +1,27 @@
+/*Write a program to calculate Area and Perimeter of Triangle for given length of three sides of
+triangle. Use sqrt() function from math.h to calculate square root.
+Perimeter = a + b + c␎ ␏ ␐ ␏ ␑
+Area = ␒␓ ␆ ␇␓ ␎ ␆ ␇␓ ␐ ␆ ␇␓ ␑
+Test the program using values 3,4,5 and 1, 2, 3 and 1, 2, 4 for a, b, c. Observe the results. */
+
+
+
+
+#include<stdio.h>
+#include<math.h>
+ 
+int main()
+{
+    float a, b, c, s, area,squrt;
+    printf("\nEnter three sides of triangle\n");
+    scanf("%f%f%f",&a,&b,&c);
+    s = (a+b+c)/2;
+ 
+    
+    area = sqrt(s*(s-a)*(s-b)*(s-c));
+ 
+  
+    printf("\n Area of triangle: %2f\n",area);
+ 
+    return 0;
+}
