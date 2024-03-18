@@ -1,0 +1,11 @@
+/*q.1 write a c code to input n no on command line arguments and calculate maximum of them*/ 
+
+#include<stdio.h>
+int main()
+{
+
+
+
+
+
+}
